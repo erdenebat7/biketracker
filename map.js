@@ -6,7 +6,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZXJkZW5lYmF0NyIsImEiOiJjbXAzNmV4aGkwbXdyMndwb
 
 const map = new mapboxgl.Map({
   container: 'map', 
-  style: 'mapbox://styles/mapbox/outdoors-v12', 
+  style: 'mapbox://styles/erdenebat7/cmp37e8b1003001spgqmgf6pm', 
   center: [-71.09415, 42.36027], 
   zoom: 12, 
   minZoom: 5, 
