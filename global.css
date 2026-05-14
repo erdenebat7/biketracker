@@ -8,3 +8,47 @@ body {
   margin: auto;
   padding: 1em;
 }
+
+#any-time {
+  color: gray;
+  font-style: italic;
+}
+
+:root {
+  --color-departures: steelblue;
+  --color-arrivals: darkorange;
+}
+
+#map svg circle, .legend > div{
+  --color: color-mix(
+    in oklch,
+    var(--color-departures) calc(100% * var(--departure-ratio)),
+    var(--color-arrivals)
+  );
+}
+
+#map svg circle {
+  fill: var(--color);
+  fill-opacity: 0.5;
+  stroke: white;
+  stroke-width: 1.2px;
+  pointer-events: auto;
+}
+
+.legend {
+  display: flex;
+  margin-block: 1em;
+  gap: 2px;
+}
+
+.legend > div {
+  flex: 1;
+  background-color: var(--color);
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  padding: 0.5em 1em;
+}
+
+.legend > div:first-child { text-align: left; }
+.legend > div:nth-child(2) { text-align: center; }
+.legend > div:last-child { text-align: right; }

@@ -24,10 +24,3 @@ body {
   pointer-events: none;
 }
 
-#map svg circle {
-  fill: steelblue;
-  fill-opacity: 0.5;
-  stroke: white;
-  stroke-width: 1.2px;
-  pointer-events: auto;
-}
